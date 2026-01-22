@@ -5,13 +5,6 @@ cd ${0%/*} || exit 1    # Run from this directory
 . $WM_PROJECT_DIR/wmake/scripts/AllwmakeParseArguments
 
 wmake $targetType
-
-
-
-wmake $targetType fvModels/VoFCavitation
 wmake $targetType fvModels/VoFBoiling/compressibleBoiling
 wmake $targetType fvModels/VoFBoiling
-wmake $targetType fvModels/VoFSolidificationMelting
-wmake $targetType fvModels/VoFClouds
-wmake $targetType fvModels/VoFTurbulenceDamping
 #------------------------------------------------------------------------------
